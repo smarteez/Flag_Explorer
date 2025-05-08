@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "mRrde5OHi4k=",
+  "success": true,
+  "projectFilePath": "C:\\Code\\Flag_Explorer\\Flag Explorer\\Flag Explorer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dsing\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.4\\microsoft.aspnetcore.openapi.9.0.4.nupkg.sha512",
+    "C:\\Users\\dsing\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}

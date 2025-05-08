@@ -1,0 +1,6 @@
+@Flag_Explorer_HostAddress = http://localhost:5014
+
+GET {{Flag_Explorer_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
