@@ -19,19 +19,9 @@ namespace Flag_Explorer.UseCase
 
         public async Task<List<CountryDTO?>> ExecuteAsync()
         {
-            try
-            {
-                var countries = await ICountryRepository.GetAllCountriesAsync();
-                if (countries == null)
-                {
-                    throw new Exception("The country list returned is null.");
-                }
-                return countries.ToList();
-            }
-            catch (Exception ex)
-            {
-                throw new Exception($"An error occurred while fetching countries: {ex.Message}", ex);
-            }
+
+                return await ICountryRepository.GetAllCountriesAsync();
+            
         }
     }
 }

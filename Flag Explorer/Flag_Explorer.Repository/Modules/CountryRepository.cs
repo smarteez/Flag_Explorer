@@ -29,6 +29,7 @@ namespace Flag_Explorer.Repository.Modules
         {
             using (var httpClient = new HttpClient())
             {
+                Console.WriteLine("Using API URL: " + _apiAllUrl);
                 var response = await httpClient.GetAsync(_apiAllUrl);
                 if (response.IsSuccessStatusCode)
                 {
@@ -39,13 +40,21 @@ namespace Flag_Explorer.Repository.Modules
 
                         if (countries == null)
                         {
-                            throw new Exception("Failed to deserialize countries");
+                            return new List<CountryDTO?>
+                        {
+                            new CountryDTO
+                            {
+                                HasErrors = true,
+                                ErrorMessage =  "Failed to deserialize countries"
+                            }
+                        };
+            
                         }
 
                         return countries.Select(x =>
                             x == null ? null : new CountryDTO
                             {
-                                Name = x.name?.common ?? "Unknown",
+                                Name = x.name?.official ?? "Unknown",
                                 Flag = x.flags?.png ?? string.Empty,
                             })
                             .OrderBy(x => x.Name)
@@ -53,13 +62,28 @@ namespace Flag_Explorer.Repository.Modules
                     }
                     catch (JsonException ex)
                     {
-                        throw new Exception($"Failed to deserialize country details: {ex.Message}", ex);
+                        return new List<CountryDTO?>
+                        {
+                            new CountryDTO
+                            {
+                                HasErrors = true,
+                                ErrorMessage =  $"Failed to deserialize countries: {ex.Message}" 
+                            }
+                        };
+                        
                     }
 
                 }
                 else
                 {
-                    throw new Exception("Failed to fetch countries");
+                    return new List<CountryDTO?>
+                        {
+                            new CountryDTO
+                            {
+                                HasErrors = true,
+                                ErrorMessage = "Failed to fetch countries" 
+                            }
+                        };
                 }
             }
         }
@@ -68,7 +92,7 @@ namespace Flag_Explorer.Repository.Modules
         {
             using (var httpClient = new HttpClient())
             {
-                var response = await httpClient.GetAsync(_apiNameUrl + countryName);
+                var response = await httpClient.GetAsync(_apiNameUrl + countryName+ "?fullText=true");
                 if (response.IsSuccessStatusCode)
                 {
                     var content = await response.Content.ReadAsStringAsync();
@@ -77,15 +101,18 @@ namespace Flag_Explorer.Repository.Modules
                         var countryDetails = JsonSerializer.Deserialize<List<Country>>(content);
                         if (countryDetails == null)
                         {
-                            return null;
+                            return new CountryDetailsDTO
+                            {
+                                HasErrors = true,
+                                ErrorMessage = countryName + " not found"
+                            };
                         }
 
 
                         return countryDetails
                                         .Select(x => new CountryDetailsDTO
                                             {
-                                                Name = x.name?.common ?? "Unknown",
-                                                Official = x.name?.official ?? "Unknown",
+                                                Name = x.name?.official ?? "Unknown",
                                                 Capital = x.capital?.FirstOrDefault() ?? "Unknown",
                                                 Population = x.population,
                                                 Flag = x.flags?.png ?? string.Empty
@@ -94,13 +121,21 @@ namespace Flag_Explorer.Repository.Modules
                     }
                     catch (JsonException ex)
                     {
-                        throw new Exception($"Failed to deserialize country details: {ex.Message}", ex);
+                        return new CountryDetailsDTO
+                        {
+                            HasErrors = true,
+                            ErrorMessage = $"Failed to deserialize countries: {ex.Message}" 
+                        };
                     }
 
                 }
                 else
                 {
-                    throw new Exception("Failed to fetch country Details");
+                    return new CountryDetailsDTO
+                    {
+                        HasErrors = true,
+                        ErrorMessage=   "Failed to fetch country Details" 
+                    };
                 }
             }
         }

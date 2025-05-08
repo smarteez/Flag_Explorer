@@ -19,21 +19,14 @@ namespace Flag_Explorer.UseCase
         {
             if (string.IsNullOrWhiteSpace(countryName))
             {
-                throw new ArgumentException("Country name cannot be null or empty.", nameof(countryName));
-            }
-            try
-            {
-                var countryDetails = await ICountryRepository.GetCountryByNameAsync(countryName);
-                if (countryDetails == null)
+                return new CountryDetailsDTO
                 {
-                    throw new Exception($"Country with name {countryName} not found.");
-                }
-                return countryDetails;
+                    HasErrors = true,
+                    ErrorMessage = "Country name cannot be null or empty."
+                };
             }
-            catch (Exception ex)
-            {
-                throw new Exception($"An error occurred while fetching country details: {ex.Message}", ex);
-            }
+                return await ICountryRepository.GetCountryByNameAsync(countryName);
+               
         }
     }
 }

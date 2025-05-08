@@ -18,10 +18,12 @@ namespace Flag_Explorer.API.Controllers
             _getByNameCountryUseCase = getByNameCountryUseCase;
         }
         [HttpGet]
-        [Route("api/countries")]
-        [SwaggerResponse(200, Type = typeof(CountryDTO))]
+         [Route("api/countries")]
+
+        [SwaggerResponse(200, Type = typeof(List<CountryDTO>))]
         public async Task<IActionResult> GetAllCountries()
         {
+
             var countries = await _getAllCountriesUseCase.ExecuteAsync();
             return Ok(countries);
         }
@@ -31,7 +33,7 @@ namespace Flag_Explorer.API.Controllers
         public async Task<IActionResult> GetCountryByName(string countryName)
         {
             var countryDetails = await _getByNameCountryUseCase.Execute(countryName);
-            if (countryDetails == null)
+            if (countryDetails.HasErrors)
             {
                 return NotFound();
             }

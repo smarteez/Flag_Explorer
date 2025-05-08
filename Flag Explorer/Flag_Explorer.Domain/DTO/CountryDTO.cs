@@ -9,9 +9,9 @@ namespace Flag_Explorer.Domain.DTO
 {
     public class CountryDTO
     {
-        [JsonPropertyName("common")]
-
         public string Name { get; set; }
         public string Flag { get; set; }
+        public bool HasErrors { get; set; }
+        public string ErrorMessage { get; set; } 
     }
 }
