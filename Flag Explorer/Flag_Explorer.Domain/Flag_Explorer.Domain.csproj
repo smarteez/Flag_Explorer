@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Flag_Explorer.Data\Flag_Explorer.Data.csproj" />
+  </ItemGroup>
+
 </Project>

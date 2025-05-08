@@ -7,16 +7,11 @@ using System.Threading.Tasks;
 
 namespace Flag_Explorer.Data.Entities
 {
-    public class Country
+    public class CountryList
     {
         public Name name { get; set; }
-        public string official { get; set; }
-        public List<string> capital { get; set; }
-        public int population { get; set; }
         public Flags flags { get; set; }
+
     }
-
-
-
 
 }

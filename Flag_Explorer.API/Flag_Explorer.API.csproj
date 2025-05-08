@@ -8,14 +8,15 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.4" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Controllers\" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="8.1.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="8.1.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="8.1.1" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Flag Explorer\Flag_Explorer.Domain\Flag_Explorer.Domain.csproj" />
+    <ProjectReference Include="..\Flag Explorer\Flag_Explorer.Repository\Flag_Explorer.Repository.csproj" />
+    <ProjectReference Include="..\Flag Explorer\Flag_Explorer.UseCase\Flag_Explorer.UseCase.csproj" />
   </ItemGroup>
 
 </Project>

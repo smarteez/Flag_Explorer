@@ -4,6 +4,72 @@
     "C:\\Code\\Flag_Explorer\\Flag_Explorer.API\\Flag_Explorer.API.csproj": {}
   },
   "projects": {
+    "C:\\Code\\Flag_Explorer\\Flag Explorer\\Flag_Explorer.Data\\Flag_Explorer.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Code\\Flag_Explorer\\Flag Explorer\\Flag_Explorer.Data\\Flag_Explorer.Data.csproj",
+        "projectName": "Flag_Explorer.Data",
+        "projectPath": "C:\\Code\\Flag_Explorer\\Flag Explorer\\Flag_Explorer.Data\\Flag_Explorer.Data.csproj",
+        "packagesPath": "C:\\Users\\dsing\\.nuget\\packages\\",
+        "outputPath": "C:\\Code\\Flag_Explorer\\Flag Explorer\\Flag_Explorer.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\dsing\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Code\\Flag_Explorer\\Flag Explorer\\Flag_Explorer.Domain\\Flag_Explorer.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -32,7 +98,160 @@
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Code\\Flag_Explorer\\Flag Explorer\\Flag_Explorer.Data\\Flag_Explorer.Data.csproj": {
+                "projectPath": "C:\\Code\\Flag_Explorer\\Flag Explorer\\Flag_Explorer.Data\\Flag_Explorer.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Code\\Flag_Explorer\\Flag Explorer\\Flag_Explorer.Repository\\Flag_Explorer.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Code\\Flag_Explorer\\Flag Explorer\\Flag_Explorer.Repository\\Flag_Explorer.Repository.csproj",
+        "projectName": "Flag_Explorer.Repository",
+        "projectPath": "C:\\Code\\Flag_Explorer\\Flag Explorer\\Flag_Explorer.Repository\\Flag_Explorer.Repository.csproj",
+        "packagesPath": "C:\\Users\\dsing\\.nuget\\packages\\",
+        "outputPath": "C:\\Code\\Flag_Explorer\\Flag Explorer\\Flag_Explorer.Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\dsing\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Code\\Flag_Explorer\\Flag Explorer\\Flag_Explorer.Domain\\Flag_Explorer.Domain.csproj": {
+                "projectPath": "C:\\Code\\Flag_Explorer\\Flag Explorer\\Flag_Explorer.Domain\\Flag_Explorer.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Code\\Flag_Explorer\\Flag Explorer\\Flag_Explorer.UseCase\\Flag_Explorer.UseCase.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Code\\Flag_Explorer\\Flag Explorer\\Flag_Explorer.UseCase\\Flag_Explorer.UseCase.csproj",
+        "projectName": "Flag_Explorer.UseCase",
+        "projectPath": "C:\\Code\\Flag_Explorer\\Flag Explorer\\Flag_Explorer.UseCase\\Flag_Explorer.UseCase.csproj",
+        "packagesPath": "C:\\Users\\dsing\\.nuget\\packages\\",
+        "outputPath": "C:\\Code\\Flag_Explorer\\Flag Explorer\\Flag_Explorer.UseCase\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\dsing\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Code\\Flag_Explorer\\Flag Explorer\\Flag_Explorer.Domain\\Flag_Explorer.Domain.csproj": {
+                "projectPath": "C:\\Code\\Flag_Explorer\\Flag Explorer\\Flag_Explorer.Domain\\Flag_Explorer.Domain.csproj"
+              },
+              "C:\\Code\\Flag_Explorer\\Flag Explorer\\Flag_Explorer.Repository\\Flag_Explorer.Repository.csproj": {
+                "projectPath": "C:\\Code\\Flag_Explorer\\Flag Explorer\\Flag_Explorer.Repository\\Flag_Explorer.Repository.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -101,6 +320,12 @@
             "projectReferences": {
               "C:\\Code\\Flag_Explorer\\Flag Explorer\\Flag_Explorer.Domain\\Flag_Explorer.Domain.csproj": {
                 "projectPath": "C:\\Code\\Flag_Explorer\\Flag Explorer\\Flag_Explorer.Domain\\Flag_Explorer.Domain.csproj"
+              },
+              "C:\\Code\\Flag_Explorer\\Flag Explorer\\Flag_Explorer.Repository\\Flag_Explorer.Repository.csproj": {
+                "projectPath": "C:\\Code\\Flag_Explorer\\Flag Explorer\\Flag_Explorer.Repository\\Flag_Explorer.Repository.csproj"
+              },
+              "C:\\Code\\Flag_Explorer\\Flag Explorer\\Flag_Explorer.UseCase\\Flag_Explorer.UseCase.csproj": {
+                "projectPath": "C:\\Code\\Flag_Explorer\\Flag Explorer\\Flag_Explorer.UseCase\\Flag_Explorer.UseCase.csproj"
               }
             }
           }
@@ -124,6 +349,18 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[9.0.4, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            },
+            "Swashbuckle.AspNetCore.Annotations": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[8.1.1, )"
             }
           },
           "imports": [

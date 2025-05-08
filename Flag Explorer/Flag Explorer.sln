@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flag_Explorer.Repository", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flag_Explorer.UseCase", "Flag_Explorer.UseCase\Flag_Explorer.UseCase.csproj", "{C5D806A5-F0BF-4E66-AF7C-FA2F3393B0BB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flag_Explorer.Data", "Flag_Explorer.Data\Flag_Explorer.Data.csproj", "{7807C927-F29B-B70F-C6C7-9BD7695A04DA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{C5D806A5-F0BF-4E66-AF7C-FA2F3393B0BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5D806A5-F0BF-4E66-AF7C-FA2F3393B0BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5D806A5-F0BF-4E66-AF7C-FA2F3393B0BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7807C927-F29B-B70F-C6C7-9BD7695A04DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7807C927-F29B-B70F-C6C7-9BD7695A04DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7807C927-F29B-B70F-C6C7-9BD7695A04DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7807C927-F29B-B70F-C6C7-9BD7695A04DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
