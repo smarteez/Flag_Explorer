@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flag_Explorer.API", "..\Fla
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flag_Explorer.Domain", "Flag_Explorer.Domain\Flag_Explorer.Domain.csproj", "{739B5EFC-A321-4297-8F31-2BB872227DB3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flag_Explorer.Data", "Flag_Explorer.Data\Flag_Explorer.Data.csproj", "{EE6449C9-70D0-4DF7-91F6-AC910BFC6A2A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flag_Explorer.Repository", "Flag_Explorer.Repository\Flag_Explorer.Repository.csproj", "{AAF36015-CA39-484E-B176-07DEC96FC2EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{739B5EFC-A321-4297-8F31-2BB872227DB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{739B5EFC-A321-4297-8F31-2BB872227DB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{739B5EFC-A321-4297-8F31-2BB872227DB3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EE6449C9-70D0-4DF7-91F6-AC910BFC6A2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EE6449C9-70D0-4DF7-91F6-AC910BFC6A2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EE6449C9-70D0-4DF7-91F6-AC910BFC6A2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EE6449C9-70D0-4DF7-91F6-AC910BFC6A2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAF36015-CA39-484E-B176-07DEC96FC2EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAF36015-CA39-484E-B176-07DEC96FC2EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAF36015-CA39-484E-B176-07DEC96FC2EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAF36015-CA39-484E-B176-07DEC96FC2EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

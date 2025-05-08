@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace Flag_Explorer.Domain.DTO
 {
-    public class ApiSettings
+    public class CountryDTO
     {
-        public string RestCountriesUrl { get; set; }
-        public string RestCountriesUrlByName { get; set; }
-
+        public string Name { get; set; }
+        public string Flag { get; set; }
     }
-
 }
