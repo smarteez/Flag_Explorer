@@ -3,31 +3,16 @@
   "WorkspaceRootPath": "C:\\Code\\Flag_Explorer\\Flag Explorer\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4782F226-78A6-459B-AE9E-7D5588BA2033}|Flag_Explorer.Repository.Test\\Flag_Explorer.Repository.Test.csproj|c:\\code\\flag_explorer\\flag explorer\\flag_explorer.repository.test\\countryrepositorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4782F226-78A6-459B-AE9E-7D5588BA2033}|Flag_Explorer.Repository.Test\\Flag_Explorer.Repository.Test.csproj|solutionrelative:flag_explorer.repository.test\\countryrepositorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{44BEA60A-4C8C-4B24-87C0-FB33A109CD25}|Flag_Explorer.API.Test\\Flag_Explorer.API.Test.csproj|c:\\code\\flag_explorer\\flag explorer\\flag_explorer.api.test\\countrycontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{44BEA60A-4C8C-4B24-87C0-FB33A109CD25}|Flag_Explorer.API.Test\\Flag_Explorer.API.Test.csproj|solutionrelative:flag_explorer.api.test\\countrycontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AAF36015-CA39-484E-B176-07DEC96FC2EA}|Flag_Explorer.Repository\\Flag_Explorer.Repository.csproj|c:\\code\\flag_explorer\\flag explorer\\flag_explorer.repository\\modules\\countryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AAF36015-CA39-484E-B176-07DEC96FC2EA}|Flag_Explorer.Repository\\Flag_Explorer.Repository.csproj|solutionrelative:flag_explorer.repository\\modules\\countryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{739B5EFC-A321-4297-8F31-2BB872227DB3}|Flag_Explorer.Domain\\Flag_Explorer.Domain.csproj|c:\\code\\flag_explorer\\flag explorer\\flag_explorer.domain\\dto\\countrydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{739B5EFC-A321-4297-8F31-2BB872227DB3}|Flag_Explorer.Domain\\Flag_Explorer.Domain.csproj|solutionrelative:flag_explorer.domain\\dto\\countrydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C5D806A5-F0BF-4E66-AF7C-FA2F3393B0BB}|Flag_Explorer.UseCase\\Flag_Explorer.UseCase.csproj|c:\\code\\flag_explorer\\flag explorer\\flag_explorer.usecase\\getbynamecountryusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5D806A5-F0BF-4E66-AF7C-FA2F3393B0BB}|Flag_Explorer.UseCase\\Flag_Explorer.UseCase.csproj|solutionrelative:flag_explorer.usecase\\getbynamecountryusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{739B5EFC-A321-4297-8F31-2BB872227DB3}|Flag_Explorer.Domain\\Flag_Explorer.Domain.csproj|c:\\code\\flag_explorer\\flag explorer\\flag_explorer.domain\\dto\\countrydetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{739B5EFC-A321-4297-8F31-2BB872227DB3}|Flag_Explorer.Domain\\Flag_Explorer.Domain.csproj|solutionrelative:flag_explorer.domain\\dto\\countrydetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CB8AFD4E-5F1C-4B75-9DAB-BA3AE2D0A98A}|..\\Flag_Explorer.API\\Flag_Explorer.API.csproj|c:\\code\\flag_explorer\\flag_explorer.api\\controllers\\countrycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C5D806A5-F0BF-4E66-AF7C-FA2F3393B0BB}|Flag_Explorer.UseCase\\Flag_Explorer.UseCase.csproj|c:\\code\\flag_explorer\\flag explorer\\flag_explorer.usecase\\getallcountriesusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5D806A5-F0BF-4E66-AF7C-FA2F3393B0BB}|Flag_Explorer.UseCase\\Flag_Explorer.UseCase.csproj|solutionrelative:flag_explorer.usecase\\getallcountriesusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -37,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -45,93 +30,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CountryController.cs",
-              "DocumentMoniker": "C:\\Code\\Flag_Explorer\\Flag_Explorer.API\\Controllers\\CountryController.cs",
-              "RelativeDocumentMoniker": "..\\Flag_Explorer.API\\Controllers\\CountryController.cs",
-              "ToolTip": "C:\\Code\\Flag_Explorer\\Flag_Explorer.API\\Controllers\\CountryController.cs",
-              "RelativeToolTip": "..\\Flag_Explorer.API\\Controllers\\CountryController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T20:10:15.736Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CountryDTO.cs",
-              "DocumentMoniker": "C:\\Code\\Flag_Explorer\\Flag Explorer\\Flag_Explorer.Domain\\DTO\\CountryDTO.cs",
-              "RelativeDocumentMoniker": "Flag_Explorer.Domain\\DTO\\CountryDTO.cs",
-              "ToolTip": "C:\\Code\\Flag_Explorer\\Flag Explorer\\Flag_Explorer.Domain\\DTO\\CountryDTO.cs",
-              "RelativeToolTip": "Flag_Explorer.Domain\\DTO\\CountryDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T20:02:09.878Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GetByNameCountryUseCase.cs",
-              "DocumentMoniker": "C:\\Code\\Flag_Explorer\\Flag Explorer\\Flag_Explorer.UseCase\\GetByNameCountryUseCase.cs",
-              "RelativeDocumentMoniker": "Flag_Explorer.UseCase\\GetByNameCountryUseCase.cs",
-              "ToolTip": "C:\\Code\\Flag_Explorer\\Flag Explorer\\Flag_Explorer.UseCase\\GetByNameCountryUseCase.cs",
-              "RelativeToolTip": "Flag_Explorer.UseCase\\GetByNameCountryUseCase.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAiwB0AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T19:55:37.677Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CountryDetailsDTO.cs",
-              "DocumentMoniker": "C:\\Code\\Flag_Explorer\\Flag Explorer\\Flag_Explorer.Domain\\DTO\\CountryDetailsDTO.cs",
-              "RelativeDocumentMoniker": "Flag_Explorer.Domain\\DTO\\CountryDetailsDTO.cs",
-              "ToolTip": "C:\\Code\\Flag_Explorer\\Flag Explorer\\Flag_Explorer.Domain\\DTO\\CountryDetailsDTO.cs",
-              "RelativeToolTip": "Flag_Explorer.Domain\\DTO\\CountryDetailsDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T19:46:15.383Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CountryRepository.cs",
-              "DocumentMoniker": "C:\\Code\\Flag_Explorer\\Flag Explorer\\Flag_Explorer.Repository\\Modules\\CountryRepository.cs",
-              "RelativeDocumentMoniker": "Flag_Explorer.Repository\\Modules\\CountryRepository.cs",
-              "ToolTip": "C:\\Code\\Flag_Explorer\\Flag Explorer\\Flag_Explorer.Repository\\Modules\\CountryRepository.cs",
-              "RelativeToolTip": "Flag_Explorer.Repository\\Modules\\CountryRepository.cs",
-              "ViewState": "AgIAAGcAAAAAAAAAAAAqwGoAAABHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T19:43:24.252Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "CountryControllerTests.cs",
               "DocumentMoniker": "C:\\Code\\Flag_Explorer\\Flag Explorer\\Flag_Explorer.API.Test\\CountryControllerTests.cs",
               "RelativeDocumentMoniker": "Flag_Explorer.API.Test\\CountryControllerTests.cs",
               "ToolTip": "C:\\Code\\Flag_Explorer\\Flag Explorer\\Flag_Explorer.API.Test\\CountryControllerTests.cs",
               "RelativeToolTip": "Flag_Explorer.API.Test\\CountryControllerTests.cs",
-              "ViewState": "AgIAAFkAAAAAAAAAAAAIwGsAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAIwGoAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T19:40:58.622Z",
+              "WhenOpened": "2025-05-08T20:23:05.358Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "GetAllCountriesUseCase.cs",
-              "DocumentMoniker": "C:\\Code\\Flag_Explorer\\Flag Explorer\\Flag_Explorer.UseCase\\GetAllCountriesUseCase.cs",
-              "RelativeDocumentMoniker": "Flag_Explorer.UseCase\\GetAllCountriesUseCase.cs",
-              "ToolTip": "C:\\Code\\Flag_Explorer\\Flag Explorer\\Flag_Explorer.UseCase\\GetAllCountriesUseCase.cs",
-              "RelativeToolTip": "Flag_Explorer.UseCase\\GetAllCountriesUseCase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABHAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "CountryRepositoryTests.cs",
+              "DocumentMoniker": "C:\\Code\\Flag_Explorer\\Flag Explorer\\Flag_Explorer.Repository.Test\\CountryRepositoryTests.cs",
+              "RelativeDocumentMoniker": "Flag_Explorer.Repository.Test\\CountryRepositoryTests.cs",
+              "ToolTip": "C:\\Code\\Flag_Explorer\\Flag Explorer\\Flag_Explorer.Repository.Test\\CountryRepositoryTests.cs",
+              "RelativeToolTip": "Flag_Explorer.Repository.Test\\CountryRepositoryTests.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAgwCsAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T20:06:44.928Z",
+              "WhenOpened": "2025-05-08T20:16:29.467Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CountryRepository.cs",
+              "DocumentMoniker": "C:\\Code\\Flag_Explorer\\Flag Explorer\\Flag_Explorer.Repository\\Modules\\CountryRepository.cs",
+              "RelativeDocumentMoniker": "Flag_Explorer.Repository\\Modules\\CountryRepository.cs",
+              "ToolTip": "C:\\Code\\Flag_Explorer\\Flag Explorer\\Flag_Explorer.Repository\\Modules\\CountryRepository.cs",
+              "RelativeToolTip": "Flag_Explorer.Repository\\Modules\\CountryRepository.cs",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAAAIsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T20:14:44.829Z",
               "EditorCaption": ""
             }
           ]
