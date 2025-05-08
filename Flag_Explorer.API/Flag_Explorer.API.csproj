@@ -14,4 +14,8 @@
     <Folder Include="Controllers\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Flag Explorer\Flag_Explorer.Domain\Flag_Explorer.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

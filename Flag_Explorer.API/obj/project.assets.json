@@ -33,6 +33,16 @@
             "related": ".pdb;.xml"
           }
         }
+      },
+      "Flag_Explorer.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Flag_Explorer.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Flag_Explorer.Domain.dll": {}
+        }
       }
     }
   },
@@ -67,10 +77,16 @@
         "microsoft.openapi.1.6.17.nupkg.sha512",
         "microsoft.openapi.nuspec"
       ]
+    },
+    "Flag_Explorer.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Flag Explorer/Flag_Explorer.Domain/Flag_Explorer.Domain.csproj",
+      "msbuildProject": "../Flag Explorer/Flag_Explorer.Domain/Flag_Explorer.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "Flag_Explorer.Domain >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 9.0.4"
     ]
   },
@@ -106,7 +122,11 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Code\\Flag_Explorer\\Flag Explorer\\Flag_Explorer.Domain\\Flag_Explorer.Domain.csproj": {
+              "projectPath": "C:\\Code\\Flag_Explorer\\Flag Explorer\\Flag_Explorer.Domain\\Flag_Explorer.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

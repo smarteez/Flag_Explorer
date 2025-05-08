@@ -3,6 +3,12 @@
   "WorkspaceRootPath": "C:\\Code\\Flag_Explorer\\Flag Explorer\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CB8AFD4E-5F1C-4B75-9DAB-BA3AE2D0A98A}|..\\Flag_Explorer.API\\Flag_Explorer.API.csproj|c:\\code\\flag_explorer\\flag_explorer.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB8AFD4E-5F1C-4B75-9DAB-BA3AE2D0A98A}|..\\Flag_Explorer.API\\Flag_Explorer.API.csproj|c:\\code\\flag_explorer\\flag_explorer.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CB8AFD4E-5F1C-4B75-9DAB-BA3AE2D0A98A}|..\\Flag_Explorer.API\\Flag_Explorer.API.csproj|c:\\code\\flag_explorer\\flag_explorer.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
@@ -13,7 +19,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -21,15 +27,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Code\\Flag_Explorer\\Flag_Explorer.API\\appsettings.json",
               "RelativeDocumentMoniker": "..\\Flag_Explorer.API\\appsettings.json",
               "ToolTip": "C:\\Code\\Flag_Explorer\\Flag_Explorer.API\\appsettings.json",
               "RelativeToolTip": "..\\Flag_Explorer.API\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-08T13:48:11.243Z",
+              "WhenOpened": "2025-05-08T13:54:04.183Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Code\\Flag_Explorer\\Flag_Explorer.API\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "..\\Flag_Explorer.API\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Code\\Flag_Explorer\\Flag_Explorer.API\\Properties\\launchSettings.json",
+              "RelativeToolTip": "..\\Flag_Explorer.API\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-08T13:53:59.067Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Code\\Flag_Explorer\\Flag_Explorer.API\\Program.cs",
+              "RelativeDocumentMoniker": "..\\Flag_Explorer.API\\Program.cs",
+              "ToolTip": "C:\\Code\\Flag_Explorer\\Flag_Explorer.API\\Program.cs",
+              "RelativeToolTip": "..\\Flag_Explorer.API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T13:51:03.852Z",
               "EditorCaption": ""
             }
           ]
