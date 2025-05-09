@@ -1,0 +1,104 @@
+trigger:
+  branches:
+    include:
+    - main
+  paths:
+   include:
+     - Flag_Explorer.API
+     - Flag_Explorer.API.Test
+     - Flag_Explorer.Data
+     - Flag_Explorer.Domain
+     - Flag_Explorer.Repository
+     - Flag_Explorer.Repository.Test
+     - Flag_Explorer.UseCase
+
+variables:
+  project: './Flag_Explorer/Flag_Explorer.API/Flag_Explorer.API.csproj'
+  nugetConfigPath: './Flag_Explorer/Flag_Explorer.API/nuget.config'
+  buildConfiguration: 'Release'
+  
+  stages:
+
+stages:
+- stage: Build_Solution_Stage
+  jobs:
+    - job: Build_Solution
+      pool:
+         vmImage: 'Ubuntu-latest'
+      variables:
+        buildConfiguration: 'Release'
+      steps:
+      - template: /Dot_Net_Core_9-0_SDK.yml
+      - task: DotNetCoreCLI@2
+        displayName: 'Restore NuGet Feed' 
+        inputs:
+          command: 'restore'
+          projects: '$(project)'
+          feedsToUse: 'config'
+          nugetConfigPath: '$(nugetConfigPath)'
+      - task: DotNetCoreCLI@2  
+        displayName: 'Building Solution' 
+        inputs:  
+          command: build  
+          projects: '**/Flag_Explorer.API.csproj'
+          arguments: '--configuration $(buildConfiguration)'
+
+   - stage: Test_Solution_Stage
+  dependsOn: Build_Solution_Stage
+  condition: succeeded()
+  jobs:
+    - job: Run_Tests
+      pool:
+        vmImage: 'Ubuntu-latest'
+      steps:
+      - template: /Dot_Net_Core_9-0_SDK.yml
+      - task: DotNetCoreCLI@2
+        displayName: 'Run Unit Tests'
+        inputs:
+          command: test
+          projects: '**/*Test.csproj'
+          arguments: '--configuration $(buildConfiguration)'
+
+      - task: DotNetCoreCLI@2
+        displayName: 'Run Integration Tests'
+        inputs:
+          command: test
+          projects: '**/Flag_Explorer.Repository.Test.csproj'
+          arguments: '--configuration $(buildConfiguration)'
+          
+- stage: Publish_Project_And_Artifacts_Stage
+  dependsOn: Build_Solution_Stage
+  condition: succeeded()
+  jobs:
+    - job: Publish_API_Project_And_Artifacts    
+      pool:
+        vmImage: 'Ubuntu-latest'
+      variables:
+        buildConfiguration: 'Release'
+        buildVersion: 1.0.$(Build.BuildId)
+        framework: net9.0
+      steps:
+      - template: /Dot_Net_Core_9-0_SDK.yml
+      - task: DotNetCoreCLI@2
+        displayName: 'Restore NuGet Feed' 
+        inputs:
+          command: 'restore'
+          projects: '$(project)'
+          feedsToUse: 'config'
+          nugetConfigPath: '$(nugetConfigPath)'
+      - task: DotNetCoreCLI@2
+        displayName: 'Dotnet Publish'
+        inputs:  
+          command: publish
+          projects: '**/EventManagement.UI.csproj'  
+          publishWebProjects: false
+          zipAfterPublish: false
+          modifyOutputPath: false
+          # arguments: '-c $(buildConfiguration) -o $(Build.ArtifactStagingDirectory) -r win-x64 -p:PublishTrimmed=true'
+          arguments: '-c $(buildConfiguration) -f $(framework) -o $(Build.ArtifactStagingDirectory)'
+          
+      - task: PublishBuildArtifacts@1
+        displayName: 'publish files-to-deploy build artifacts'
+        inputs:
+          pathtoPublish: '$(Build.ArtifactStagingDirectory)' 
+          artifactName: 'files-to-deploy'
