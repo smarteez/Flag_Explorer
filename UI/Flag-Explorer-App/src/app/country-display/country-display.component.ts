@@ -4,6 +4,7 @@ import { CountryService } from '../services/country.service';
 import { Country } from '../interface/country';
 import { Observable, Subscription } from 'rxjs';
 import { NgxPaginationModule } from 'ngx-pagination';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -22,7 +23,9 @@ export class CountryDisplayComponent implements OnInit, OnDestroy {
   page = 1;
   itemsPerPage = 25;
 
- constructor(private countryService: CountryService) {}
+ constructor(private countryService: CountryService,
+            private router: Router
+ ) {}
 
    ngOnInit() {
      this.countriesSub$ = this.countryService.getAllCountries().subscribe(
@@ -43,7 +46,20 @@ export class CountryDisplayComponent implements OnInit, OnDestroy {
     this.updatePage();
   }
     
- 
+ openDetails(countryName: string | undefined) {
+    if (!countryName) {
+      console.error('Country name is undefined');
+      return;
+    }
+    console.log('Country name:', countryName);
+    this.router.navigateByUrl(`/country-details/${countryName}`);
+
+
+
+
+
+  }
+
 
   ngOnDestroy() {
     this.countriesSub$.unsubscribe();

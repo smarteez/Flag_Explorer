@@ -5,7 +5,7 @@ import { CountryService } from './services/country.service';
 
 @Component({
   selector: 'app-root',
-  imports: [ CountryDisplayComponent
+  imports: [ RouterOutlet
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',

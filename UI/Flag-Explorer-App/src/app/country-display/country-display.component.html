@@ -5,7 +5,7 @@
 
 <div class="grid-container">
   <div *ngFor="let country of countries | paginate: { id: 'myPagination', itemsPerPage: 25, currentPage: page }" class="grid-item tooltip">
-    <img [src]="country.flag" alt="{{ country.name }}">
+    <img [src]="country.flag" alt="{{ country.name }} "(click)="openDetails(country.name)">
     <span class="tooltip-text">{{ country.name }}</span>
   </div>
 </div>
