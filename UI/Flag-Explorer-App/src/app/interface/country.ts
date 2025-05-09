@@ -1,6 +1,6 @@
-export interface Country {
-  name: string
-  flag: string
-  hasErrors: boolean
-  errorMessage: string
+export class Country {
+  name: string | undefined
+  flag: string | undefined
+  hasErrors: boolean | undefined
+  errorMessage: string | undefined
 }

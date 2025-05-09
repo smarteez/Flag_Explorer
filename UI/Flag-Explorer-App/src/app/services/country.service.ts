@@ -1,20 +1,21 @@
-import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
-import { Country } from '../interface/country';
-import { Observable } from 'rxjs';
-import { CountryDetails } from '../interface/countryDetails';
+import { HttpClient } from "@angular/common/http";
+import { Injectable } from "@angular/core";
+import { Country } from "../interface/country";
+import { Observable } from "rxjs";
+import { CountryDetails } from "../interface/countryDetails";
 
 @Injectable({
   providedIn: 'root'
 })
-export class CounrtyService {
 
-  private  baseUrl = 'https://localhost:44319/api/';
+
+export class CountryService {
+    private  baseUrl = 'https://localhost:44319/api/';
   constructor(private http: HttpClient) { }
 
 
-  getAllCountries() : Observable<Country> {
-    return this.http.get<Country>(this.baseUrl + 'countries');
+  getAllCountries() : Observable<Country[]> {
+    return this.http.get<Country[]>(this.baseUrl + 'countries');
   }
 
   getCounrtyDetails(name: string) : Observable<CountryDetails> { 
