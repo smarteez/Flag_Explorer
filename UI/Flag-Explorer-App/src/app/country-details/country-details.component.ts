@@ -1,6 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Subscription } from 'rxjs';
+import { Subject, Subscription, takeUntil } from 'rxjs';
 import { CountryService } from '../services/country.service';
 import { CountryDetails } from '../interface/countryDetails';
 
@@ -11,8 +11,8 @@ import { CountryDetails } from '../interface/countryDetails';
   styleUrl: './country-details.component.css'
 })
 export class CountryDetailsComponent  implements OnInit, OnDestroy{
-  activatedRouteSub$ = new Subscription();
-  countryDetailsSub$ = new Subscription();
+ private destroy$ = new Subject<void>();
+
   countryName = "";
   countryDetails: CountryDetails | undefined ;
 
@@ -22,13 +22,19 @@ constructor(private route: ActivatedRoute,
             private CountryService: CountryService,
 ) {} 
 ngOnInit() {
-  this.activatedRouteSub$ = this.route.paramMap.subscribe(params => {
-    this.countryName = params.get('countryName') || '';
+  this.route.paramMap.pipe(takeUntil(this.destroy$)).subscribe(params => {
+    const name = params.get('countryName');
+    if (name) {
+      this.countryName = name;
+      this.CountryService.getCountryDetails(name)
+        .pipe(takeUntil(this.destroy$))
+        .subscribe(data => {
+          this.countryDetails = data;
+        });
+    }
   });
-  this.countryDetailsSub$ = this.CountryService.getCountryDetails(this.countryName).subscribe( data=> {
-      this.countryDetails = data;
-    });
 }
+
 
  goBack() {
     this.router.navigateByUrl('/home');
@@ -36,7 +42,8 @@ ngOnInit() {
   }
 
 ngOnDestroy() {
-  this.activatedRouteSub$.unsubscribe();
-  this.countryDetailsSub$.unsubscribe();
+    this.destroy$.next();
+  this.destroy$.complete();
+
 }
 }
