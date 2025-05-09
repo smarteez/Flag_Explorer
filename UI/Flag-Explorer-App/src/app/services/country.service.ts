@@ -18,7 +18,7 @@ export class CountryService {
     return this.http.get<Country[]>(this.baseUrl + 'countries');
   }
 
-  getCounrtyDetails(name: string) : Observable<CountryDetails> { 
+  getCountryDetails(name: string) : Observable<CountryDetails> { 
     return this.http.get<CountryDetails>(this.baseUrl + 'countries/' + name);
   }
 }

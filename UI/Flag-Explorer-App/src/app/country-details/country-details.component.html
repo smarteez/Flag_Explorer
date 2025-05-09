@@ -1,1 +1,11 @@
-<p>country-details works!</p>
+<div class="country-card">
+  <h1>{{ countryName }}</h1>
+  <img [src]="countryDetails?.flag" alt="Flag of {{ countryName }}" class="flag-img" />
+  <div class="details">
+    <p><strong>Capital:</strong> {{ countryDetails?.capital }}</p>
+    <p><strong>Population:</strong> {{ countryDetails?.population}}</p>
+    
+  </div>
+  <button (click)="goBack()">Back</button>
+
+</div>

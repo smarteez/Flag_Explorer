@@ -5,6 +5,6 @@ import { CountryDisplayComponent } from './country-display/country-display.compo
 export const routes: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
     { path: 'home', component: CountryDisplayComponent },
-    { path: 'country-details/:name', component: CountryDetailsComponent },
+    { path: 'country-details/:countryName', component: CountryDetailsComponent },
     { path: '**', redirectTo: 'home' }
 ];
