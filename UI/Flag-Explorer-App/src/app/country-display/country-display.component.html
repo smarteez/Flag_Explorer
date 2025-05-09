@@ -1,10 +1,11 @@
 
   <h1> Flag Explorer App </h1>
-<div class="grid-container">
-  <div *ngFor="let country of countries | paginate: { id: 'myPagination', itemsPerPage: 25, currentPage: page }" class="grid-item">
-    <img [src]="country.flag" alt="{{ country.name }}">
-  </div>
-</div>
 
 <pagination-controls [id]="'myPagination'" (pageChange)="page = $event"></pagination-controls>
 
+<div class="grid-container">
+  <div *ngFor="let country of countries | paginate: { id: 'myPagination', itemsPerPage: 25, currentPage: page }" class="grid-item tooltip">
+    <img [src]="country.flag" alt="{{ country.name }}">
+    <span class="tooltip-text">{{ country.name }}</span>
+  </div>
+</div>
